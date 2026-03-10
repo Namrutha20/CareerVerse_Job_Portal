@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="profile.html">Profile</a>
+        <a href="applied.html">Applied Jobs</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="profile-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Namrutha Srinidhi" class="avatar">
+            <div class="profile-info">
+                <h2>Namrutha Srinidhi</h2>
+                <p>Frontend Developer</p>
+                <p>namrutha.srinidhi@example.com</p>
+            </div>
+        </div>
+        <div class="profile-content">
+            <div class="profile-section">
+                <h3>About Me</h3>
+                <p id="userDescription">Passionate frontend developer with 3+ years of experience creating responsive and user-friendly web applications. Skilled in modern JavaScript frameworks and committed to delivering high-quality, performant code. Always eager to learn new technologies and tackle challenging projects.</p>
+            </div>
+            <div class="profile-section">
+                <h3>Skills</h3>
+                <div class="skills-grid" id="userSkills">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+            </div>
+            <div class="profile-section">
+                <h3>Resume</h3>
+                <div class="resume-upload">
+                    <input type="file" id="resumeInput" accept=".pdf,.doc,.docx" style="display: none;">
+                    <button onclick="document.getElementById('resumeInput').click()" class="upload-btn">Upload Resume</button>
+                    <span id="resumeStatus">No resume uploaded</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/profile.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Secure Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form auth-card">
+            <div class="logo-container"><img src="images/careerverse-logo.png" alt="CareerVerse Logo" class="site-logo">
+                
+                <h2>CareerVerse</h2>
+            </div>
+            <p class="auth-subtitle">Sign in to continue your career journey.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="username">Email or Username</label>
+                    <input type="text" id="username" autocomplete="username" placeholder="jane.doe@example.com" required>
+                    <span class="field-error" id="usernameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" autocomplete="current-password" placeholder="Enter your password" required>
+                        <button type="button" class="password-toggle" id="togglePassword">Show</button>
+                    </div>
+                    <span class="field-error" id="passwordError"></span>
+                </div>
+
+                <div class="form-row">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me on this device</span>
+                    </label>
+                    <button type="button" class="link-button" id="demoLogin">Try demo account</button>
+                </div>
+
+                <button type="submit" class="primary-btn">Login securely</button>
+
+                <p class="form-helper">
+                    New to this portal?
+                    <a href="register.html">Create a free account</a>
+                </p>
+                <p class="form-helper small">
+                    Or continue without an account as a
+                    <button type="button" class="link-button" id="guestAccess">guest</button>
+                    (limited features).
+                </p>
+                <div class="form-alert" id="loginStatus" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="login-image login-image-overlay">
+            <div class="login-image-content">
+                <h2>Discover roles tailored to you</h2>
+                <p>Our smart matching helps job seekers and recruiters connect faster.</p>
+                <ul class="auth-highlights">
+                    <li>Personalized job recommendations</li>
+                    <li>Track your applications in one place</li>
+                    <li>Showcase your skills and resume</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

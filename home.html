@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Find Your Dream Career</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="profile.html">Profile</a>
+        <a href="applied.html">Applied Jobs</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Connect with top companies and discover opportunities that match your skills and aspirations.</p>
+            <div class="hero-search">
+                <input type="text" placeholder="Search for jobs, companies, or keywords..." class="hero-search-input">
+                <button class="hero-search-btn">Search Jobs</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15,000+</span>
+                    <span class="stat-label">Active Jobs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50,000+</span>
+                    <span class="stat-label">Job Seekers</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Professional team working">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Why Choose Our Platform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=100&h=100&fit=crop&crop=center" alt="Explore Jobs" class="feature-icon">
+                    <h3>Smart Job Matching</h3>
+                    <p>Our AI-powered algorithm matches you with jobs that fit your skills and preferences perfectly.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=center" alt="Manage Profile" class="feature-icon">
+                    <h3>Professional Profile</h3>
+                    <p>Create a standout profile that showcases your experience and gets you noticed by employers.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=100&h=100&fit=crop&crop=center" alt="Track Applications" class="feature-icon">
+                    <h3>Application Tracking</h3>
+                    <p>Keep track of all your applications and follow up on opportunities with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=100&h=100&fit=crop&crop=center" alt="Career Growth" class="feature-icon">
+                    <h3>Career Resources</h3>
+                    <p>Access resume tips, interview guides, and career advice to boost your job search.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Popular Job Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="searchCategory('Technology')">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=150&fit=crop" alt="Technology">
+                    <h4>Technology</h4>
+                    <p>1,200+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchCategory('Design')">
+                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=200&h=150&fit=crop" alt="Design">
+                    <h4>Design</h4>
+                    <p>850+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchCategory('Marketing')">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=150&fit=crop" alt="Marketing">
+                    <h4>Marketing</h4>
+                    <p>650+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchCategory('Finance')">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=150&fit=crop" alt="Finance">
+                    <h4>Finance</h4>
+                    <p>720+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchCategory('Healthcare')">
+                    <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=200&h=150&fit=crop" alt="Healthcare">
+                    <h4>Healthcare</h4>
+                    <p>580+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchCategory('Education')">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&h=150&fit=crop" alt="Education">
+                    <h4>Education</h4>
+                    <p>420+ jobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Companies -->
+    <section class="companies-section">
+    <div class="container">
+
+        <h2>Top Companies Hiring</h2>
+
+        <div class="companies-grid">
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/meta/0866ff" alt="Meta">
+                <p>Meta</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/zoho/ea4335" alt="Zoho">
+                <p>Zoho</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/tata/0066b2" alt="TCS">
+                <p>TCS</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/hcl/004c97" alt="HCL">
+                <p>HCL</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/accenture/a100ff" alt="Accenture">
+                <p>Accenture</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/wipro/6f2da8" alt="Wipro">
+                <p>Wipro</p>
+            </div>
+
+            <div class="company-card">
+                <img src="https://cdn.simpleicons.org/mahindra/ff0000" alt="Tech Mahindra">
+                <p>Tech Mahindra</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/80?img=12" class="testimonial-avatar">
+                    <p>"This platform helped me land my dream job in just two weeks! The job matching is incredible."</p>
+                    <cite>- Michael Chen, Product Manager</cite>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/80?img=32" class="testimonial-avatar">
+                    <p>"The application tracking feature kept me organized throughout my job search. Highly recommended!"</p>
+                    <cite>- Sarah Johnson, Software Engineer</cite> 
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/80?img=15" class="testimonial-avatar">
+                    <p>"Professional interface and great company connections. Found multiple opportunities I wouldn't have otherwise."</p>
+                    <cite>- Emily Davis, UX Designer</cite>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Career Journey?</h2>
+            <p>Join thousands of professionals who have found their perfect job through our platform.</p>
+            <a href="jobs.html" class="cta-button">Browse Jobs Now</a>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

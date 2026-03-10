@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Applied Jobs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="profile.html">Profile</a>
+        <a href="applied.html">Applied Jobs</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+    <div class="container">
+        <h1>Applied Jobs</h1>
+        <div id="appliedList"></div>
+    </div>
+    
+    <!-- Job Details Modal -->
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <script src="js/applied.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
